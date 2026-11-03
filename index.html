@@ -3,44 +3,68 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Festival Alizé : musique et danse (concept)</title>
+<title>Festival Alizé (site concept)</title>
 <meta name="description" content="Page d'événement concept d'un festival fictif. Projet personnel, aucune billetterie réelle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="top">
-  <a class="marque" href="#">Festival Alizé</a>
+  <a class="marque" href="#">Alizé</a>
   <nav><a href="#programme">Programme</a><a href="#infos">Infos</a><a href="#billets">Billets</a></nav>
 </header>
 <main>
   <section class="hero">
-    <p class="kicker">Événement fictif · concept</p>
-    <h1>Trois jours de musique face à l'océan.</h1>
-    <p class="intro">Concerts, danse et ateliers, du vendredi au dimanche.</p>
-    <p class="compte" id="compte" aria-live="polite"></p>
-    <a class="bouton" href="#billets">Réserver ma place</a>
+    <div class="hero-texte">
+      <p class="kicker">Festival fictif, lieu imaginaire</p>
+      <h1>Trois jours de musique face à l'océan.</h1>
+      <p class="intro">Des concerts, de la danse et des ateliers, du vendredi au dimanche.</p>
+      <p class="compte" id="compte" aria-live="polite"></p>
+      <a class="bouton" href="#billets">Réserver ma place</a>
+    </div>
+    <img src="images/plage.jpg" alt="Scène en bord de mer au coucher du soleil, avec le public devant" width="1400" height="961">
   </section>
+
+  <section class="bandeau" aria-label="Chiffres de la démonstration">
+    <div><b>3</b><span>jours</span></div>
+    <div><b>9</b><span>rendez-vous</span></div>
+    <div><b>1</b><span>atelier de danse</span></div>
+  </section>
+
   <section id="programme">
     <h2>Programme</h2>
-    <div class="onglets" role="tablist">
-      <button role="tab" aria-selected="true" data-jour="ven">Vendredi</button>
-      <button role="tab" aria-selected="false" data-jour="sam">Samedi</button>
-      <button role="tab" aria-selected="false" data-jour="dim">Dimanche</button>
+    <div class="prog">
+      <div>
+        <div class="onglets" role="tablist" aria-label="Jours du festival">
+          <button role="tab" aria-selected="true" data-jour="ven">Vendredi</button>
+          <button role="tab" aria-selected="false" data-jour="sam">Samedi</button>
+          <button role="tab" aria-selected="false" data-jour="dim">Dimanche</button>
+        </div>
+        <ul class="liste" id="liste"></ul>
+      </div>
+      <img src="images/scene.jpg" alt="Foule rassemblée devant une scène en plein air, en fin de journée" loading="lazy" width="1400" height="916">
     </div>
-    <ul class="liste" id="liste"></ul>
   </section>
-  <section id="infos">
+
+  <section id="infos" class="infos">
     <h2>Infos pratiques</h2>
     <div class="grille">
-      <article><h3>Lieu</h3><p>Plage imaginaire, lieu fictif.</p></article>
-      <article><h3>Horaires</h3><p>Portes à 16 h, dernier concert à 23 h.</p></article>
-      <article><h3>Accès</h3><p>Navettes et parking à prévoir dans une version réelle.</p></article>
+      <article><h3>Lieu</h3><p>Une plage imaginaire, à quelques pas de la scène principale.</p></article>
+      <article><h3>Horaires</h3><p>Ouverture des portes à 16 h, dernier concert à 23 h.</p></article>
+      <article><h3>Accès</h3><p>Dans une vraie édition, des navettes et un parking seraient prévus.</p></article>
+    </div>
+    <div class="photos">
+      <img src="images/coucher.jpg" alt="Silhouettes de spectateurs, bras levés, sous un ciel de fin de journée" loading="lazy" width="1400" height="934">
+      <img src="images/foule.jpg" alt="Vue aérienne d'un concert en plein air avec la foule" loading="lazy" width="1400" height="939">
     </div>
   </section>
-  <section id="billets">
+
+  <section id="billets" class="billets">
     <h2>Billets</h2>
     <form id="formulaire">
-      <label>Nom<input name="nom" required></label>
+      <label>Nom<input name="nom" required autocomplete="name"></label>
       <label>Formule
         <select name="formule" id="formule">
           <option value="1">1 jour</option>
@@ -54,7 +78,7 @@
     </form>
   </section>
 </main>
-<footer><p>Site concept, projet personnel. Festival fictif : aucune billetterie ni date réelle.</p></footer>
+<footer><p>Festival Alizé, site concept. Artistes, dates, lieu et prix sont inventés. Photographies libres de droits issues d'Unsplash, utilisées en illustration.</p></footer>
 <script src="script.js"></script>
 </body>
 </html>
