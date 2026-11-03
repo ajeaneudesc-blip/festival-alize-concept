@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Festival Alizé : musique et danse (concept)</title>
+<meta name="description" content="Page d'événement concept d'un festival fictif. Projet personnel, aucune billetterie réelle.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="marque" href="#">Festival Alizé</a>
+  <nav><a href="#programme">Programme</a><a href="#infos">Infos</a><a href="#billets">Billets</a></nav>
+</header>
+<main>
+  <section class="hero">
+    <p class="kicker">Événement fictif · concept</p>
+    <h1>Trois jours de musique face à l'océan.</h1>
+    <p class="intro">Concerts, danse et ateliers, du vendredi au dimanche.</p>
+    <p class="compte" id="compte" aria-live="polite"></p>
+    <a class="bouton" href="#billets">Réserver ma place</a>
+  </section>
+  <section id="programme">
+    <h2>Programme</h2>
+    <div class="onglets" role="tablist">
+      <button role="tab" aria-selected="true" data-jour="ven">Vendredi</button>
+      <button role="tab" aria-selected="false" data-jour="sam">Samedi</button>
+      <button role="tab" aria-selected="false" data-jour="dim">Dimanche</button>
+    </div>
+    <ul class="liste" id="liste"></ul>
+  </section>
+  <section id="infos">
+    <h2>Infos pratiques</h2>
+    <div class="grille">
+      <article><h3>Lieu</h3><p>Plage imaginaire, lieu fictif.</p></article>
+      <article><h3>Horaires</h3><p>Portes à 16 h, dernier concert à 23 h.</p></article>
+      <article><h3>Accès</h3><p>Navettes et parking à prévoir dans une version réelle.</p></article>
+    </div>
+  </section>
+  <section id="billets">
+    <h2>Billets</h2>
+    <form id="formulaire">
+      <label>Nom<input name="nom" required></label>
+      <label>Formule
+        <select name="formule" id="formule">
+          <option value="1">1 jour</option>
+          <option value="3">Pass 3 jours</option>
+        </select>
+      </label>
+      <label>Nombre de places<input type="number" name="n" id="n" min="1" max="8" value="1" required></label>
+      <p id="total" aria-live="polite"></p>
+      <button class="bouton" type="submit">Réserver</button>
+      <p id="retour" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer><p>Site concept, projet personnel. Festival fictif : aucune billetterie ni date réelle.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
