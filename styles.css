@@ -1,5 +1,5 @@
 /* Palette : vin, rose, gris perle. Police : Poppins. */
-:root { --fond:#e3e2df; --sable:#e3afbc; --texte:#5d001e; --doux:#7d4a5a; --lagon:#9a1750; --rose:#ee4c7c; --prune:#5d001e; --trait:#cfcdc8; --clair:#f3f2f0; }
+:root { --fond:#ffffff; --sable:#ffffff; --texte:#5d001e; --doux:#7d4a5a; --lagon:#9a1750; --rose:#ee4c7c; --prune:#5d001e; --trait:#cfcdc8; --clair:#ffffff; }
 * { box-sizing: border-box; border-radius: 0; }
 html { scroll-behavior: smooth; }
 body { margin:0; font-family:"Poppins",system-ui,sans-serif; font-weight:400; color:var(--texte); background:var(--fond); line-height:1.7; }
@@ -27,7 +27,7 @@ h3 { font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:upper
 .bouton { display:inline-block; margin-top:14px; padding:14px 30px; border:1px solid var(--prune); background:var(--prune); color:#fff; font:inherit; font-size:14px; font-weight:700; letter-spacing:.04em; text-decoration:none; cursor:pointer; transition:background .3s ease, color .3s ease; }
 .bouton:hover { background:var(--clair); color:var(--prune); }
 
-.bandeau { display:grid; grid-template-columns:repeat(3,1fr); background:var(--lagon); color:#fff; max-width:none; padding:36px 48px; text-align:center; }
+.bandeau { display:grid; grid-template-columns:repeat(3,1fr); background:#fff; color:var(--lagon); border-top:1px solid var(--trait); border-bottom:1px solid var(--trait); max-width:none; padding:36px 48px; text-align:center; }
 .bandeau b { display:block; font-weight:600; font-size:48px; line-height:1.1; }
 .bandeau span { font-size:14px; letter-spacing:.06em; }
 
@@ -41,10 +41,10 @@ h3 { font-size:13px; font-weight:600; letter-spacing:.14em; text-transform:upper
 .liste li { display:flex; gap:24px; padding:18px 0; border-bottom:1px solid var(--trait); font-size:17px; }
 .liste time { font-weight:600; min-width:64px; color:var(--lagon); }
 
-.infos { background:var(--sable); max-width:none; }
+.infos { background:#fff; max-width:none; border-top:1px solid var(--trait); }
 .infos > * { max-width:1024px; margin-left:auto; margin-right:auto; }
 .grille { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-bottom:40px; }
-article { background:var(--clair); border-top:3px solid var(--rose); padding:24px; }
+article { background:#fff; border:1px solid var(--trait); border-top:3px solid var(--rose); padding:24px; }
 article p { margin:0; font-size:15px; }
 .photos { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .photos img { width:100%; aspect-ratio:3/2; object-fit:cover; }
