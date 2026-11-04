@@ -10,5 +10,5 @@ Projet personnel de design et d'intégration. Le festival est **fictif** : artis
 - HTML sémantique, CSS sans framework, responsive, onglets accessibles, mouvement réduit respecté.
 
 ## Style et photos
-- Polices DM Serif Display (titres) et DM Sans (texte), palette sable, vert lagon, rose corail et prune, angles droits.
+- Police Poppins, palette vin, rose et gris perle, angles droits.
 - Photographies libres de droits issues d'Unsplash (licence Unsplash), utilisées en illustration.
